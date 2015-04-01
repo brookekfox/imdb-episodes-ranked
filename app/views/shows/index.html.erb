@@ -1,0 +1,16 @@
+
+<h1><%= @shows.last.title.split.map(&:capitalize).join(' ') %></h1>
+<table>
+	<tr>
+		<td>TITLE</td>
+		<td>EPISODE NUMBER</td>
+		<td>RATING</td>
+	</tr>
+	<% @episodes.each do |ep| %>
+		<tr>
+			<td><%= ep[0] %></td>
+			<td><%= ep[1] %>.<%= ep[2] %></td>
+			<td><%= ep[3] %></td>
+		</tr>
+	<% end %>
+</table>
