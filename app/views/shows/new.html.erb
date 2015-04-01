@@ -1,6 +1,9 @@
-<h1>What are the highest rated episodes of a series?</h1>
-
-<%= form_for @show do |f| %>
-	<%= f.text_field :title, placeholder:'Series title' %>
-	<%= f.submit 'SEARCH' %>
-<% end %>
+<div class="container" style="margin-top:10%;">
+	<h1>What are the highest rated episodes of a series?</h1>
+	<div class="form-container">
+		<%= form_for @show do |f| %>
+			<%= f.text_field :title, placeholder:'Series title', class:'input-box' %>
+			<%= f.submit 'SEARCH', class:'btn btn-default' %>
+		<% end %>
+	</div>
+</div>
